@@ -5,11 +5,11 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-> This is the first milestone in the React Calculator project. On this milestone, I was able to create the basic template for the project. I installed all the required dependencies and created the necessary files for linting. This milestone asked us to deploy our project to Heroku as well, to make sure everything is ready.
+> For this second Milestone, I created the necessary components that I will need to create the calculator. I separated each component into different files and deployed the final result to Heroku.
 
-![screenshot1](./src/assets/screenshot01.png)
+![screenshot1](./src/assets/screenshot02.png)
 
-> Besides the basic project structure, we had to delete all the files that were not necessary for the development of the project, so now the project is only displaying a "Hello world" message..
+> For this milestone, the calculator has no functionality or styling, but all the components are working together and rendering the final result.
 
 ## Live Version
 
@@ -107,7 +107,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Future Upgrades
 
-- Create components
 - Style the interface
 - Create calculation functionality
 - Create event handlers
