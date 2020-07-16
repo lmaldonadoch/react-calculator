@@ -8,7 +8,9 @@ export default class Display extends React.Component {
       result: '0',
     };
   }
+
   render() {
-    return <div>{this.state.result}</div>;
+    const { result } = this.state;
+    return <div>{result}</div>;
   }
 }

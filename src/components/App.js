@@ -3,7 +3,7 @@ import '../index.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
-export default function App(props) {
+export default function App() {
   return (
     <div className="calculator-body">
       <Display />
