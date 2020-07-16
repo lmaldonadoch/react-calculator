@@ -5,7 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-> KThis is the first milestone in the React Calculator project. On this milestone, I was able to create the basic template for the project. I installed all the required dependencies and created the necessary files for linting. This milestone asked us to deploy our project to Heroku as well, to make sure everything is ready.
+> This is the first milestone in the React Calculator project. On this milestone, I was able to create the basic template for the project. I installed all the required dependencies and created the necessary files for linting. This milestone asked us to deploy our project to Heroku as well, to make sure everything is ready.
 
 ![screenshot1](./src/assets/screenshot01.png)
 
