@@ -9,40 +9,40 @@ function ButtonPanel(clickHandler) {
       ? 'light-grey'
       : 'orange';
     return (
-      <Button name={name} wide={wide} color={color} onClick={clickHandler} />
+      <Button name={name} wide={wide} color={color} onclick={clickHandler} />
     );
   };
 
   return (
     <div className="button-panel">
       <div className="row">
-        {this.renderButton('AC')}
-        {this.renderButton('+/-')}
-        {this.renderButton('%')}
-        {this.renderButton('÷')}
+        {renderButton('AC')}
+        {renderButton('+/-')}
+        {renderButton('%')}
+        {renderButton('÷')}
       </div>
       <div className="row">
-        {this.renderButton('7')}
-        {this.renderButton('8')}
-        {this.renderButton('9')}
-        {this.renderButton('X')}
+        {renderButton('7')}
+        {renderButton('8')}
+        {renderButton('9')}
+        {renderButton('X')}
       </div>
       <div className="row">
-        {this.renderButton('4')}
-        {this.renderButton('5')}
-        {this.renderButton('6')}
-        {this.renderButton('-')}
+        {renderButton('4')}
+        {renderButton('5')}
+        {renderButton('6')}
+        {renderButton('-')}
       </div>
       <div className="row">
-        {this.renderButton('1')}
-        {this.renderButton('2')}
-        {this.renderButton('3')}
-        {this.renderButton('+')}
+        {renderButton('1')}
+        {renderButton('2')}
+        {renderButton('3')}
+        {renderButton('+')}
       </div>
       <div className="row">
-        {this.renderButton('0')}
-        {this.renderButton('.')}
-        {this.renderButton('=')}
+        {renderButton('0')}
+        {renderButton('.')}
+        {renderButton('=')}
       </div>
     </div>
   );

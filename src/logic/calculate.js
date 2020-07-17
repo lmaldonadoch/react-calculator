@@ -1,6 +1,6 @@
 import Operate from './operate';
 
-const Calculate = ((calculator, buttonName) => {
+const Calculate = (calculator, buttonName) => {
   const { total, next, operation } = calculator;
 
   if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(buttonName)) {
@@ -12,18 +12,21 @@ const Calculate = ((calculator, buttonName) => {
 
   if (buttonName === 'AC') {
     return { total: null, next: null, operation: null };
-  } if (buttonName === '+/-') {
+  }
+  if (buttonName === '+/-') {
     return {
       total: total * -1,
       next: next ? next * -1 : next,
       operation,
     };
-  } if (buttonName === '.') {
+  }
+  if (buttonName === '.') {
     if (next) {
       return { total, next: next + buttonName, operation };
     }
     return { total: total + buttonName, next, operation };
-  } if (buttonName === '=') {
+  }
+  if (buttonName === '=') {
     return {
       total: next ? Operate(total, next, operation) : total,
       next: null,
@@ -38,6 +41,6 @@ const Calculate = ((calculator, buttonName) => {
     };
   }
   return { total, next: null, operation: buttonName };
-})();
+};
 
 export default Calculate;

@@ -3,14 +3,14 @@ import React from 'react';
 import '../index.scss';
 import PropTypes from 'prop-types';
 
-function Button(name, wide, color, onClick) {
+function Button({ name, wide, color, onClick }) {
   const style = {
     width: wide,
     background: color,
   };
 
-  const clickHandler = (name) => {
-    return onClick(name);
+  const clickHandler = () => {
+    return name;
   };
 
   return (
