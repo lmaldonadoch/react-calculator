@@ -9,12 +9,8 @@ function Button({ name, wide, color, onClick }) {
     background: color,
   };
 
-  const clickHandler = () => {
-    return name;
-  };
-
   return (
-    <button type="submit" style={style} onClick={clickHandler}>
+    <button type="submit" style={style} onClick={onClick}>
       {name}
     </button>
   );

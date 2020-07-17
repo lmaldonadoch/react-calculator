@@ -9,7 +9,12 @@ function ButtonPanel(clickHandler) {
       ? 'light-grey'
       : 'orange';
     return (
-      <Button name={name} wide={wide} color={color} onclick={clickHandler} />
+      <Button
+        name={name}
+        wide={wide}
+        color={color}
+        onClick={() => clickHandler.onClick(name)}
+      />
     );
   };
 
