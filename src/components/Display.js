@@ -14,5 +14,9 @@ export default class Display extends React.Component {
 }
 
 Display.propTypes = {
-  result: PropTypes.string.isRequired,
+  result: PropTypes.string,
+};
+
+Display.defaultProps = {
+  result: '0',
 };
