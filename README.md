@@ -1,15 +1,19 @@
-# React Calculator Milestone 4
+# React Calculator Milestone 5
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-> For this second Milestone, I created the calculate and operate modules to be used in the next milestone.
+> For this last milestone, I had to integrate everything. I used all the components we created previously to handle the logic from the milestone 4. I made the onClick event from the last child reach the parent component to process the information and pass the processed data to the Display component.
+
+![screenshot1](./src/assets/screenshot01.png)
+
+![screenshot1](./src/assets/screenshot02.png)
 
 ![screenshot1](./src/assets/screenshot03.png)
 
-> For this milestone, the calculator has no functionality or styling, but all the components are working together and rendering the final result.
+> On this last step, I made sure that everything was working correctly. I managed to synchronize and organize the components and methods so that they could perform the requested functionality.
 
 ## Live Version
 
@@ -107,9 +111,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Future Upgrades
 
-- Style the interface
-- Create calculation functionality
-- Create event handlers
+- Add more options for calculation like square root, power and more.
 
 ## 🤝 Contributing
 

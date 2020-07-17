@@ -20,11 +20,12 @@ export default class App extends React.Component {
   }
 
   render() {
-    const result = this.state.next ? this.state.next : this.state.total;
+    const { total, next } = this.state;
+    const result = next || total;
     return (
       <div className="calculator-body">
         <Display result={result} />
-        <ButtonPanel onClick={(buttonName) => this.handleClick(buttonName)} />
+        <ButtonPanel onClick={buttonName => this.handleClick(buttonName)} />
       </div>
     );
   }
