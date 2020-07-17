@@ -3,19 +3,21 @@ import React from 'react';
 import '../index.scss';
 import PropTypes from 'prop-types';
 
-export default class Button extends React.Component {
-  render() {
-    const { name, wide, color } = this.props;
-    const style = {
-      width: wide,
-      background: color,
-    };
-    return (
-      <button type="submit" style={style}>
-        {name}
-      </button>
-    );
-  }
+function Button(name, wide, color, onClick) {
+  const style = {
+    width: wide,
+    background: color,
+  };
+
+  const clickHandler = (name) => {
+    return onClick(name);
+  };
+
+  return (
+    <button type="submit" style={style} onClick={clickHandler}>
+      {name}
+    </button>
+  );
 }
 
 Button.propTypes = {
@@ -27,3 +29,5 @@ Button.propTypes = {
 Button.defaultProps = {
   color: 'orange',
 };
+
+export default Button;
