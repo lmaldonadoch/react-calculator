@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import '../index.css';
+import '../index.scss';
 import PropTypes from 'prop-types';
 
 export default class Display extends React.Component {
