@@ -8,7 +8,7 @@ export default class ButtonPanel extends React.Component {
     const wide = name === '0' ? '50%' : '25%';
     const color = !['÷', 'X', '-', '+', '='].includes(name)
       ? 'light-grey'
-      : null;
+      : 'orange';
     return <Button name={name} wide={wide} color={color} />;
   }
 

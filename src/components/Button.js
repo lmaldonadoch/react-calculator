@@ -8,7 +8,7 @@ export default class Button extends React.Component {
     const { name, wide, color } = this.props;
     const style = {
       width: wide,
-      background: color ? color : 'orange',
+      background: color,
     };
     return (
       <button type="submit" style={style}>
@@ -20,4 +20,10 @@ export default class Button extends React.Component {
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
+  wide: PropTypes.string.isRequired,
+  color: PropTypes.string,
+};
+
+Button.defaultProps = {
+  color: 'orange',
 };
