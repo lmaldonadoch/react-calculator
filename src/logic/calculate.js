@@ -5,9 +5,9 @@ const Calculate = (calculator, buttonName) => {
 
   if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(buttonName)) {
     if (operation) {
-      return { total, next: next + buttonName, operation };
+      return { total, next: next ? next + buttonName : buttonName, operation };
     }
-    return { total: total + buttonName, next, operation };
+    return { total: total ? total + buttonName : buttonName, next, operation };
   }
 
   if (buttonName === 'AC') {
