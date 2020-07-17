@@ -1,0 +1,40 @@
+*,
+*:hover,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  content: none;
+}
+
+.calculator-body {
+  width: 700px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.display {
+  background: gray;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  padding: 0 30px;
+  text-align: end;
+}
+
+.button-panel {
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    height: 100px;
+    width: 100%;
+  }
+
+  button {
+    width: 25%;
+    height: 100%;
+  }
+}

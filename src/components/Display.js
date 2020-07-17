@@ -1,16 +1,18 @@
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import '../index.css';
+import PropTypes from 'prop-types';
 
 export default class Display extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      result: '0',
-    };
-  }
-
   render() {
-    const { result } = this.state;
-    return <div>{result}</div>;
+    let { result } = this.props;
+    if (!result) {
+      result = 0;
+    }
+    return <div className="display">{result}</div>;
   }
 }
+
+Display.propTypes = {
+  result: PropTypes.string.isRequired,
+};

@@ -6,7 +6,7 @@ import ButtonPanel from './ButtonPanel';
 export default function App() {
   return (
     <div className="calculator-body">
-      <Display />
+      <Display result={'0'} />
       <ButtonPanel />
     </div>
   );
