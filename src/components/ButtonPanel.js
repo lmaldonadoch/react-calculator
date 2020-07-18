@@ -5,7 +5,7 @@ import Button from './Button';
 
 export default class ButtonPanel extends React.Component {
   renderButton(name) {
-    const wide = name === '0' ? '50%' : '25%';
+    const wide = name === '0' ? true : false;
     const color = !['÷', 'X', '-', '+', '='].includes(name)
       ? 'light-grey'
       : 'orange';

@@ -7,7 +7,7 @@ export default class Button extends React.Component {
   render() {
     const { name, wide, color } = this.props;
     const style = {
-      width: wide,
+      width: wide ? '50%' : '25%',
       background: color,
     };
     return (
@@ -21,7 +21,7 @@ export default class Button extends React.Component {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   wide: PropTypes.string.isRequired,
-  color: PropTypes.string,
+  color: PropTypes.bool,
 };
 
 Button.defaultProps = {
