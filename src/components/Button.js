@@ -2,11 +2,9 @@ import React from 'react';
 import '../index.scss';
 import PropTypes from 'prop-types';
 
-function Button({
-  name, wide, color, onClick,
-}) {
+function Button({ name, wide, color, onClick }) {
   const style = {
-    width: wide,
+    width: wide ? '50%' : '25%',
     background: color,
   };
 
@@ -19,7 +17,7 @@ function Button({
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  wide: PropTypes.string.isRequired,
+  wide: PropTypes.bool.isRequired,
   color: PropTypes.string,
   onClick: PropTypes.func.isRequired,
 };

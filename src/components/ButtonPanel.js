@@ -4,7 +4,7 @@ import Button from './Button';
 
 function ButtonPanel(clickHandler) {
   const renderButton = name => {
-    const wide = name === '0' ? '50%' : '25%';
+    const wide = name === '0';
     const color = !['÷', 'X', '-', '+', '='].includes(name)
       ? 'light-grey'
       : 'orange';
