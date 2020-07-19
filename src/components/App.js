@@ -16,7 +16,14 @@ export default class App extends React.Component {
 
   handleClick(buttonName) {
     const result = Calculate(this.state, buttonName);
-    this.setState(result);
+    const { total } = this.state;
+    if (total === 'No division by 0') {
+      let { newTotal } = this.state;
+      newTotal = null;
+      this.setState({ total: newTotal });
+    } else {
+      this.setState(result);
+    }
   }
 
   render() {
