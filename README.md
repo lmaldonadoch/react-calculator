@@ -1,13 +1,13 @@
-# React Calculator Milestone 1
+# React Calculator Milestone 4
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-> For this second Milestone, I created the necessary components that I will need to create the calculator. I separated each component into different files and deployed the final result to Heroku.
+> For this second Milestone, I created the calculate and operate modules to be used in the next milestone.
 
-![screenshot1](./src/assets/screenshot02.png)
+![screenshot1](./src/assets/screenshot03.png)
 
 > For this milestone, the calculator has no functionality or styling, but all the components are working together and rendering the final result.
 
