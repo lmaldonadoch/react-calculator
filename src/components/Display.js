@@ -8,7 +8,6 @@ function Display({ result }) {
 }
 
 Display.propTypes = {
-  result: PropTypes.string,
 };
 
 Display.defaultProps = {
