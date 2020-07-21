@@ -1,6 +1,6 @@
 import Big from 'big.js';
 
-const Operate = ((number1, number2, operation) => {
+const Operate = (number1, number2, operation) => {
   const bigNum1 = Big(number1);
   const bigNum2 = Big(number2);
   if (operation === '%') {
@@ -20,6 +20,6 @@ const Operate = ((number1, number2, operation) => {
   }
 
   return null;
-})();
+};
 
 export default Operate;
